@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Users\Students\Documents\RAD Studio\Projects\Unit2.pas=G:\База Данных\kyrsovayBaturo\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.pas,C:\Users\Students\Documents\RAD Studio\Projects\Unit1.pas=G:\База Данных\kyrsovayBaturo\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Users\Students\Documents\RAD Studio\Projects\Unit1.dfm=G:\База Данных\kyrsovayBaturo\Unit1.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dfm,C:\Users\Students\Documents\RAD Studio\Projects\Unit2.dfm=G:\База Данных\kyrsovayBaturo\Unit2.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.dproj,C:\Users\Students\Documents\RAD Studio\Projects\Project1.dproj=G:\База Данных\kyrsovayBaturo\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.683,=C:\Users\sergey\Downloads\kyrsovayBaturo\Unit6.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.237,C:\Users\sergey\Downloads\kyrsovayBaturo\Unit6.pas=</Transaction>
+  </Transactions>
+</BorlandProject>
