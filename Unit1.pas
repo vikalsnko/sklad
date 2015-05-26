@@ -139,149 +139,148 @@ uses Unit2, Unit3, Unit5, Unit4;
 
 procedure TForm1.ButtonInsertClick(Sender: TObject);
 begin
-if DataModule2.ADOQuerySotrydnik.State=dsBrowse then
-   DataModule2.ADOQuerySotrydnik.Insert;
+  if DataModule2.ADOQuerySotrydnik.State=dsBrowse then
+    DataModule2.ADOQuerySotrydnik.Insert;
 end;
 
 procedure TForm1.CancelButtonClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryTovar.State in [dsInsert,dsEdit] then
-   DataModule2.ADOQueryTovar.Cancel;
+  if DataModule2.ADOQueryTovar.State in [dsInsert,dsEdit] then
+    DataModule2.ADOQueryTovar.Cancel;
 end;
 
 procedure TForm1.DeleteButtonClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryTovar.State=dsBrowse then
-  if MessageDlg('Подтвердите удаление данной записи',
-  mtConfirmation,[mbYes,mbNo],0)=mrYes then
-  DataModule2.ADOQueryTovar.Delete;
+  if DataModule2.ADOQueryTovar.State=dsBrowse then
+    if MessageDlg('Подтвердите удаление данной записи',
+    mtConfirmation,[mbYes,mbNo],0)=mrYes then
+      DataModule2.ADOQueryTovar.Delete;
 end;
 
 procedure TForm1.Отм_енитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryPrihod.State in [dsInsert,dsEdit] then
-   DataModule2.ADOQueryPrihod.Cancel;
+  if DataModule2.ADOQueryPrihod.State in [dsInsert,dsEdit] then
+    DataModule2.ADOQueryPrihod.Cancel;
 end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-DataModule2.RvProject1.Open;
-DataModule2.RvProject1.ExecuteReport('Report1');
+  DataModule2.RvProject1.Open;
+  DataModule2.RvProject1.ExecuteReport('Report1');
 end;
 
 procedure TForm1.Button2Click(Sender: TObject);
 begin
-DataModule2.RvProject3.Open;
-DataModule2.RvProject3.ExecuteReport('Report2');
+  DataModule2.RvProject3.Open;
+  DataModule2.RvProject3.ExecuteReport('Report2');
 end;
 
 procedure TForm1.Button3Click(Sender: TObject);
 begin
-DataModule2.RvProject4.Open;
-DataModule2.RvProject4.ExecuteReport('Report2');
+  DataModule2.RvProject4.Open;
+  DataModule2.RvProject4.ExecuteReport('Report2');
 end;
 
 procedure TForm1.ButtonDeleteClick(Sender: TObject);
 begin
-if DataModule2.ADOQuerySotrydnik.State=dsBrowse then
-  if MessageDlg('Подтвердите удаление данной записи',
-  mtConfirmation,[mbYes,mbNo],0)=mrYes then
-  DataModule2.ADOQuerySotrydnik.Delete;
+  if DataModule2.ADOQuerySotrydnik.State=dsBrowse then
+    if MessageDlg('Подтвердите удаление данной записи',
+    mtConfirmation,[mbYes,mbNo],0)=mrYes then
+      DataModule2.ADOQuerySotrydnik.Delete;
 end;
 
 procedure TForm1.DobavitButtonClick(Sender: TObject);
 begin
-if DataModule2.ADOQuerySklad.State=dsBrowse then
-   DataModule2.ADOQuerySklad.Insert;
+  if DataModule2.ADOQuerySklad.State=dsBrowse then
+    DataModule2.ADOQuerySklad.Insert;
 end;
 
 procedure TForm1.EditButtonClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryTovar.State=dsBrowse then
-   DataModule2.ADOQueryTovar.Edit;
+  if DataModule2.ADOQueryTovar.State=dsBrowse then
+    DataModule2.ADOQueryTovar.Edit;
 end;
 
 procedure TForm1.exit1Click(Sender: TObject);
 begin
-application.Terminate;
+  application.Terminate;
 end;
 
 procedure TForm1.FormActivate(Sender: TObject);
 begin
-act:=true;
+  act:=true;
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
   act:=false;
-
 end;
 
 procedure TForm1.InsertButtonClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryTovar.State=dsBrowse then
-   DataModule2.ADOQueryTovar.Insert;
+  if DataModule2.ADOQueryTovar.State=dsBrowse then
+    DataModule2.ADOQueryTovar.Insert;
 end;
 
 procedure TForm1.добавитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryPrihod.State=dsBrowse then
-   DataModule2.ADOQueryPrihod.Insert;
+  if DataModule2.ADOQueryPrihod.State=dsBrowse then
+    DataModule2.ADOQueryPrihod.Insert;
 end;
 
 procedure TForm1.удалитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryPrihod.State=dsBrowse then
-  if MessageDlg('Подтвердите удаление данной записи',
-  mtConfirmation,[mbYes,mbNo],0)=mrYes then
-  DataModule2.ADOQueryPrihod.Delete;
+  if DataModule2.ADOQueryPrihod.State=dsBrowse then
+    if MessageDlg('Подтвердите удаление данной записи',
+    mtConfirmation,[mbYes,mbNo],0)=mrYes then
+      DataModule2.ADOQueryPrihod.Delete;
 end;
 
 procedure TForm1.N10Click(Sender: TObject);
 begin
-form1.PageControl1.TabIndex:=2;
-//form1.showmodal;
+  form1.PageControl1.TabIndex:=2;
+  //form1.showmodal;
 end;
 
 procedure TForm1.N11Click(Sender: TObject);
 begin
-form1.PageControl1.TabIndex:=1;
-//form1.showmodal;
+  form1.PageControl1.TabIndex:=1;
+  //form1.showmodal;
 end;
 
 procedure TForm1.N12Click(Sender: TObject);
 begin
-form4.tb.TabIndex:=0;
-form4.showmodal;
+  form4.tb.TabIndex:=0;
+  form4.showmodal;
 end;
 
 procedure TForm1.N13Click(Sender: TObject);
 begin
-form1.PageControl1.TabIndex:=0;
+  form1.PageControl1.TabIndex:=0;
 end;
 
 procedure TForm1.N15Click(Sender: TObject);
 begin
-   Form5.PageControl1.TabIndex:=0;
-   Form5.ShowModal;
+  Form5.PageControl1.TabIndex:=0;
+  Form5.ShowModal;
 end;
 
 procedure TForm1.N16Click(Sender: TObject);
 begin
- Form5.PageControl1.TabIndex:=1;
-   Form5.ShowModal;
+  Form5.PageControl1.TabIndex:=1;
+  Form5.ShowModal;
 end;
 
 procedure TForm1.N17Click(Sender: TObject);
 begin
- Form5.PageControl1.TabIndex:=2;
-   Form5.ShowModal;
+  Form5.PageControl1.TabIndex:=2;
+  Form5.ShowModal;
 end;
 
 procedure TForm1.N18Click(Sender: TObject);
 begin
- Form5.PageControl1.TabIndex:=3;
-   Form5.ShowModal;
+  Form5.PageControl1.TabIndex:=3;
+  Form5.ShowModal;
 end;
 
 procedure TForm1.N2Click(Sender: TObject);
@@ -291,38 +290,38 @@ end;
 
 procedure TForm1.N3Click(Sender: TObject);
 begin
-form4.tb.TabIndex:=3;
-form4.showmodal;
+  form4.tb.TabIndex:=3;
+  form4.showmodal;
 end;
 
 procedure TForm1.N5Click(Sender: TObject);
 begin
-form4.tb.TabIndex:=2;
-form4.showmodal;
+  form4.tb.TabIndex:=2;
+  form4.showmodal;
 end;
 
 procedure TForm1.N6Click(Sender: TObject);
 begin
-Form4.tb.TabIndex:=1;
-form4.showmodal;
+  Form4.tb.TabIndex:=1;
+  form4.showmodal;
 end;
 
 procedure TForm1.N8Click(Sender: TObject);
 begin
-form3.PageControl1.TabIndex:=0;
-form3.showmodal;
+  form3.PageControl1.TabIndex:=0;
+  form3.showmodal;
 end;
 
 procedure TForm1.N9Click(Sender: TObject);
 begin
-form3.PageControl1.TabIndex:=2;
-form3.showmodal;
+  form3.PageControl1.TabIndex:=2;
+  form3.showmodal;
 end;
 
 procedure TForm1.PostButtonClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryTovar.State in [dsInsert,dsEdit] then
-   DataModule2.ADOQueryTovar.Post;
+  if DataModule2.ADOQueryTovar.State in [dsInsert,dsEdit] then
+    DataModule2.ADOQueryTovar.Post;
 end;
 
 procedure TForm1.YdalitButtonClick(Sender: TObject);
@@ -330,39 +329,41 @@ begin
 if DataModule2.ADOQuerySklad.State=dsBrowse then
   if MessageDlg('Подтвердите удаление данной записи',
   mtConfirmation,[mbYes,mbNo],0)=mrYes then
-  DataModule2.ADOQuerySklad.Delete;
+    DataModule2.ADOQuerySklad.Delete;
 end;
 
 procedure TForm1.Д_обавитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQuerySklad.State=dsBrowse then
-   DataModule2.ADOQuerySklad.Append;
+  if DataModule2.ADOQuerySklad.State=dsBrowse then
+    DataModule2.ADOQuerySklad.Append;
 end;
 
 procedure TForm1.До_бавитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryPrihod.State=dsBrowse then
-   DataModule2.ADOQueryPrihod.Insert;
+  if DataModule2.ADOQueryPrihod.State=dsBrowse then
+    DataModule2.ADOQueryPrihod.Insert;
 end;
 
 procedure TForm1.З_апомнитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQuerySklad.State in [dsInsert,dsEdit] then
-   DataModule2.ADOQuerySklad.Post;
-   DataModule2.ADOQuerySklad.Active:=false;
-      DataModule2.ADOQuerySklad.Active:=true;
+  if DataModule2.ADOQuerySklad.State in [dsInsert,dsEdit] then
+  begin
+    DataModule2.ADOQuerySklad.Post;
+    DataModule2.ADOQuerySklad.Active:=false;
+    DataModule2.ADOQuerySklad.Active:=true;
+  end;
 end;
 
 procedure TForm1.За_помнитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryPrihod.State in [dsInsert,dsEdit] then
-   DataModule2.ADOQueryPrihod.Post;
+  if DataModule2.ADOQueryPrihod.State in [dsInsert,dsEdit] then
+    DataModule2.ADOQueryPrihod.Post;
 end;
 
 procedure TForm1.От_менитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQuerySklad.State in [dsInsert,dsEdit] then
-   DataModule2.ADOQuerySklad.Cancel;
+  if DataModule2.ADOQuerySklad.State in [dsInsert,dsEdit] then
+    DataModule2.ADOQuerySklad.Cancel;
 end;
 
 procedure TForm1.ПоискClick(Sender: TObject);
@@ -387,18 +388,18 @@ end;
 
 procedure TForm1.У_далитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQuerySklad.State=dsBrowse then
-  if MessageDlg('Подтвердите удаление данной записи',
-  mtConfirmation,[mbYes,mbNo],0)=mrYes then
-  DataModule2.ADOQuerySklad.Delete;
+  if DataModule2.ADOQuerySklad.State=dsBrowse then
+    if MessageDlg('Подтвердите удаление данной записи',
+    mtConfirmation,[mbYes,mbNo],0)=mrYes then
+      DataModule2.ADOQuerySklad.Delete;
 end;
 
 procedure TForm1.Уд_алитьClick(Sender: TObject);
 begin
-if DataModule2.ADOQueryPrihod.State=dsBrowse then
-  if MessageDlg('Подтвердите удаление данной записи',
-  mtConfirmation,[mbYes,mbNo],0)=mrYes then
-  DataModule2.ADOQueryPrihod.Delete;
+  if DataModule2.ADOQueryPrihod.State=dsBrowse then
+    if MessageDlg('Подтвердите удаление данной записи',
+    mtConfirmation,[mbYes,mbNo],0)=mrYes then
+      DataModule2.ADOQueryPrihod.Delete;
 end;
 
 end.
