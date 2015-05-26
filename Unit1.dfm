@@ -350,6 +350,10 @@
       Margins.Bottom = 4
       Caption = #1057#1082#1083#1072#1076
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object DBGrid2: TDBGrid
         Left = 4
         Top = 21
@@ -514,6 +518,10 @@
       Margins.Bottom = 4
       Caption = #1055#1088#1080#1093#1086#1076
       ImageIndex = 2
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object DBGrid3: TDBGrid
         Left = 4
         Top = 0
