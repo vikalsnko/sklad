@@ -98,9 +98,8 @@ begin
   begin
     DataModule2.ADOQuerySotrydnik.Post;
     DataModule2.ADOQuerySotrydnik.Active:=false;
+    DataModule2.ADOQuerySotrydnik.Active:=true;
   end;
-
-  DataModule2.ADOQuerySotrydnik.Active:=true;
 end;
 
 procedure TForm3.О_тменитьClick(Sender: TObject);

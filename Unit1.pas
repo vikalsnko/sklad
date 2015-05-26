@@ -350,8 +350,8 @@ begin
   begin
     DataModule2.ADOQuerySklad.Post;
     DataModule2.ADOQuerySklad.Active:=false;
+    DataModule2.ADOQuerySklad.Active:=true;
   end;
-  DataModule2.ADOQuerySklad.Active:=true;
 end;
 
 procedure TForm1.За_помнитьClick(Sender: TObject);
