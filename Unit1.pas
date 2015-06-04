@@ -81,7 +81,46 @@ type
     N16: TMenuItem;
     N17: TMenuItem;
     N18: TMenuItem;
-
+   procedure InsertButtonClick(Sender: TObject);
+    procedure EditButtonClick(Sender: TObject);
+    procedure DeleteButtonClick(Sender: TObject);
+    procedure CancelButtonClick(Sender: TObject);
+    procedure YdalitButtonClick(Sender: TObject);
+    procedure DobavitButtonClick(Sender: TObject);
+    procedure добавитьClick(Sender: TObject);
+    procedure ButtonInsertClick(Sender: TObject);
+    procedure ButtonDeleteClick(Sender: TObject);
+    procedure Отм_енитьClick(Sender: TObject);
+    procedure удалитьClick(Sender: TObject);
+    procedure N2Click(Sender: TObject);
+    procedure Д_обавитьClick(Sender: TObject);
+    procedure У_далитьClick(Sender: TObject);
+    procedure З_апомнитьClick(Sender: TObject);
+    procedure ПоискClick(Sender: TObject);
+    procedure До_бавитьClick(Sender: TObject);
+    procedure За_помнитьClick(Sender: TObject);
+    procedure Уд_алитьClick(Sender: TObject);
+    procedure N5Click(Sender: TObject);
+    procedure exit1Click(Sender: TObject);
+    procedure N6Click(Sender: TObject);
+    procedure N3Click(Sender: TObject);
+    procedure N10Click(Sender: TObject);
+    procedure N11Click(Sender: TObject);
+    procedure N8Click(Sender: TObject);
+    procedure N9Click(Sender: TObject);
+    procedure N12Click(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure N13Click(Sender: TObject);
+    procedure PostButtonClick(Sender: TObject);
+    procedure От_менитьClick(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure N15Click(Sender: TObject);
+    procedure N16Click(Sender: TObject);
+    procedure N17Click(Sender: TObject);
+    procedure N18Click(Sender: TObject);
   private
     { Private declarations }
   public
